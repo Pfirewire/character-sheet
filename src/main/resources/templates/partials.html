@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <!--Meta Tags Fragment-->
+    <div th:fragment="metaTags" th:remove="tag">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+    </div>
+
+    <!--Links Fragment-->
+    <div th:fragment="links" th:remove="tag">
+        <link rel="shortcut icon" type="images/png" th:href="@{/megamanicon.png}">
+    </div>
+
 </head>
 <body>
 
+
+<!--Scripts Fragment-->
+<div th:fragment="scripts" th:remove="tag">
+    <!-- jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
